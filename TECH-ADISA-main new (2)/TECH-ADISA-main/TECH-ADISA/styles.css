@@ -248,6 +248,8 @@ body, html {
 /* our story*/
 div.our-story{
     padding: 30px 30px;
+    background-color: #1d3557;
+    color: white;
 }
 
 .main-text h4{
@@ -264,13 +266,12 @@ div.our-story{
 
 /*wrapper section*/
 .wrapper{
-    position:absolute;
     display: flex;
     width: 100%;
 }
 
 .container3{
-    width: 28vmin;
+    width: 33%;
     height: 28vmin;
     display: flex;
     flex-direction: column;
@@ -279,16 +280,17 @@ div.our-story{
     justify-content: space-around;
     padding: 20px;
     font-size: 24px;
+    background-color: #7c4dff;
 }
 
 i{
     text-align: center;
 }
 span.num{
-    color: #7c4dff;
+    color: #09080a;
     text-align: center;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 38px;
     
 
 }
@@ -296,6 +298,19 @@ span.team{
     color: rgb(20, 20, 20);
     text-align: center;
     font-weight: 500;
+    font-size: 20px;
+}
+span.experience{
+    color: rgb(20, 20, 20);
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+span.projects{
+    color: rgb(20, 20, 20);
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 @media screen and (max-width:1024px) {
@@ -337,17 +352,19 @@ span.team{
 
  div.we-do-desc p{
     font-size: 18px;
-    font-weight: 200px;
+    font-weight: 400px;
  }
 
  /*wedo card box*/
  div.wedo-card{
-    background-color: #e63946;
+    background-color:#023e8a;
     border-radius: 20px;
     padding: 20px 40px;
-    box-shadow: 0px 5px  15px rgba(0, 0, 0, 0.25) ;
-
+    box-shadow: 10px 5px  15px rgba(0, 0, 0, 0.25) ;
  }
+
+
+
 .wedo-card h5{
     font-size: 20px;
     font-weight: bold;
@@ -406,20 +423,87 @@ div.newsletter{
 
 Div.newsletter h2{
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 div.newsletter ul{
-    display: block;
+    display:flex ;
     font-size: 12px;
     color: #070f29;
-    font-weight: 600; 
+    font-weight: 600;
+    padding: 0; 
+    margin: 0; 
 }
+
+div.newsletter .form-control {
+    padding: 4px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+}
+
 .h1.title-large-text{
     font-family: 'Droid Serif', serif;
     justify-items: center;
 
 }
 /*responsive*/
+@media (min-width: 768px) {
+    div.newsletter ul {
+        flex-direction: row; /* Aligns items in a row on larger screens */
+        justify-content: space-between; /* Distributes space between items */
+    }
+
+    div.newsletter form {
+        flex-direction: row; /* Aligns form elements in a row on larger screens */
+        align-items: center; /* Centers form elements vertically */
+    }
+
+    div.newsletter .form-control {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    div.newsletter .btn {
+        margin:0;
+    }
+}
+
+@media (max-width: 767px) {
+    div.newsletter ul {
+        font-size: 12px; /* Adjusts font size for smaller screens */
+        flex-direction: row; /* Stacks items vertically on smaller screens */
+        align-items: center; /* Centers items horizontally */
+    }
+
+    div.newsletter form {
+        flex-direction: row; /* Stacks form elements vertically on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    div.newsletter {
+        padding: 30px; /* Reduces padding on very small screens */
+    }
+
+    div.newsletter h2 {
+        font-size: 1.25rem; /* Reduces font size for very small screens */
+    }
+
+    div.newsletter .form-control {
+        padding: 8px; /* Adjusts padding for smaller screens */
+    }
+
+    div.newsletter .btn {
+        padding: 8px; /* Adjusts padding for smaller screens */
+    }
+}
+
+/* Title large text styling */
+.h1.title-large-text {
+    font-family: 'Droid Serif', serif;
+    font-size: 2rem; /* Adjusts font size */
+    margin: 0 auto; /* Centers the text */
+}
 
 /* FORM PAGE*/
 
@@ -445,8 +529,10 @@ div.newsletter ul{
   }
 
 .text-button{
-    text-align: right;
+    text-align: center;
     margin-bottom: 30px;
+    
+
 }
 
 
@@ -720,3 +806,68 @@ hr {
         font-size: 4vw; /* Adjust font size for smaller screens */
     }
 }
+
+/* web development page*/
+div.full-page-banner{
+    padding: 40px 50px;
+    background-color: #a8dadc;
+    border-radius: 2px;
+    width: 200px;
+    box-shadow: 0px 5px  15px rgba(0, 0, 0, 0.25) ;
+    width: 100%;
+    
+
+}
+.full-page-banner h1{
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: left;
+    font-weight: 700;
+}
+
+/*SERVICES INCLUDE*/
+div.service-include{
+    padding: 40px 45px;
+    background-color: #e8ece6;
+}
+
+.service-include h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    
+}
+.service-include p{
+    font-weight:300;
+    font-size: 20px;
+
+}
+
+.card {
+    width: 300px;
+    height: 254px;
+    background-image: linear-gradient(163deg, #1b110e 0%, #240b58 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    width: 190px;
+    height: 254px;
+    background-color: #023e8a;
+    border-radius:0;
+    transition: all .2s;
+    padding: 30px 35px;
+    width: auto;
+
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
