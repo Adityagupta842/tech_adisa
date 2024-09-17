@@ -280,14 +280,15 @@ div.our-story{
     justify-content: space-around;
     padding: 20px;
     font-size: 24px;
-    background-color: #7c4dff;
+    background-color: #2A628F;
+    
 }
 
 i{
     text-align: center;
 }
 span.num{
-    color: #09080a;
+    color:white;
     text-align: center;
     font-weight: 600;
     font-size: 38px;
@@ -295,19 +296,19 @@ span.num{
 
 }
 span.team{
-    color: rgb(20, 20, 20);
+    color: white;
     text-align: center;
     font-weight: 500;
     font-size: 20px;
 }
 span.experience{
-    color: rgb(20, 20, 20);
+    color: white;
     text-align: center;
     font-weight: 500;
     font-size: 20px;
 }
 span.projects{
-    color: rgb(20, 20, 20);
+    color:white;
     text-align: center;
     font-weight: 500;
     font-size: 20px;
@@ -333,9 +334,11 @@ span.projects{
       max-width: 1140px !important;
     }
   }
+
+
  div.what-we-do{
     padding: 50px 5px;
-    background-color: #83a9e2;
+    background-color: #ade8f4;
     position: relative;
  }
  
@@ -345,23 +348,35 @@ span.projects{
 
  }
 
- div.we-do-desc h3{
+ .we-do-desc h3{
     font-size: 25px;
     font-weight: 400;
  }
 
  div.we-do-desc p{
-    font-size: 18px;
-    font-weight: 400px;
+    font-size: 20px;
+    font-weight: 450;
  }
 
- /*wedo card box*/
+
  div.wedo-card{
-    background-color:#023e8a;
     border-radius: 20px;
     padding: 20px 40px;
-    box-shadow: 10px 5px  15px rgba(0, 0, 0, 0.25) ;
+    width: 350px;
+    height: 220px;
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(6, 97, 136, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 0 5px 50px rgba(14, 18, 19, 0.55);
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 15px;
  }
+      
+      .wedo-card:hover {
+        transform: scale(0.9);
+      }
+ 
 
 
 
@@ -387,7 +402,7 @@ div.eng-model.head-text.text-start{
 }
 
 
-div.eng-model.head-text.text-start.h4{
+div.eng-model.head-text h4{
     color: #070f29;
     margin-bottom: 10px;
     font-weight: 600;
@@ -396,22 +411,29 @@ div.eng-model.head-text.text-start.h4{
     font-family: 'Droid Serif', serif;
 }
 
+.eng-card{
+    margin-top: 15px;
+}
 
 div.eng-card-box{
     margin-top: 20px;
     padding: 40px;
     font-size: 20px;
+    display: flex;
 }
+
 .eng-card-box{
     background-color: #a8dadc;
     border-radius: 20px;
     padding: 10px 60px;
-    width: 200px;
     box-shadow: 0px 5px  15px rgba(0, 0, 0, 0.25) ;
-    width: 100%;
-    
+    width: 100%; 
 }
 
+.eng-card .card-title i {
+    font-size: 24px;
+    margin-right: 10px; /* Space between icon and text */
+}
 
 
 div.newsletter{
@@ -825,10 +847,19 @@ div.full-page-banner{
     font-weight: 700;
 }
 
+div.packages{
+    padding: 40px 50px;
+    width: 200px;
+
+}
+
+
+
 /*SERVICES INCLUDE*/
 div.service-include{
     padding: 40px 45px;
     background-color: #e8ece6;
+   
 }
 
 .service-include h1{
@@ -847,20 +878,21 @@ div.service-include{
 .card {
     width: 300px;
     height: 254px;
-    background-image: linear-gradient(163deg, #1b110e 0%, #240b58 100%);
-    border-radius: 20px;
+    background-image: linear-gradient(163deg, #1b110e 0%, #0a0419 100%);
+    border-radius: 10px;
     transition: all .3s;
+    margin-top: 20px;
+    
    }
    
    .card2 {
-    width: 190px;
+    width: 40px;
     height: 254px;
     background-color: #023e8a;
-    border-radius:0;
+    border-radius:10px;
     transition: all .2s;
     padding: 30px 35px;
     width: auto;
-
    }
    
    .card2:hover {
@@ -871,3 +903,4 @@ div.service-include{
    .card:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
    }
+

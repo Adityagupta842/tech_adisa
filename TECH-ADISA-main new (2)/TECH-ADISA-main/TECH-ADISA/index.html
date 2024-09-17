@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +19,6 @@
     <a href="#"><img src="images/logo.png" alt="Company Logo"></a>
     <a href="#"><img src="images/TECH-ADISA.png" alt="Company Logo"></a>
   </div>
-
   <main>
     <nav class="navbar">
       <div class="logo">
@@ -63,7 +61,7 @@
             <a href="#service4">SMO Services</a>
             <a href="#service5">Software</a>
             <a href="#service6">PPC Services</a>
-            <a href="#service7">Web Development</a>
+            <a href="web.html">Web Development</a>
             <a href="#service7">Graphic Design</a>
             <a href="#service7">Web Design Services</a>
           </div>
@@ -164,7 +162,7 @@
     </div>
     <!--our story -->
     <div class="our-story">
-      <div class="container">
+      <div class="container-lg col-sm">
         <div class="main-text">
           <h4>Our Story</h4>
           <p>
@@ -193,10 +191,9 @@
     </div>
     </div>
     </div>
-
     <!-- what we do-->
     <div class="what-we-do">
-      <div class="container">
+      <div class="container-md col-sm">
         <div class="we-do-desc">
           <div class="row">
             <div class="col-md-6">
@@ -216,7 +213,8 @@
           <div class="row">
             <div class="col-md-4">
               <div class="wedo-card">
-                <div class="card-body text-white">
+                <div class="card-head text-white">
+                  <img src="https://png.pngtree.com/png-clipart/20230403/original/pngtree-digital-marketing-line-icon-png-image_9020927.png" width="50px" height="40px">
                   <h5 class="card-title">Digital Marketing</h5>
                   <p class="card-body">
                     We provide digital marketing services to help businesses grow and reach their target audience.
@@ -227,18 +225,20 @@
             </div>
             <div class="col-md-4">
               <div class="wedo-card">
-                <div class="card-body text-white">
+                <div class="card-haed text-white">
+                  <img src="" width="50px" height="40px">
                   <h5 class="card-title">web development</h5>
                   <p class="card-body">
                     We provide digital marketing services to help businesses grow and reach their target audience.
                   </p>
-                  <a href="form.html" class="btn btn-primary">more</a>
+                  <a href="web.html" class="btn btn-primary">more</a>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="wedo-card">
-                <div class="card-body text-white">
+                <div class="card-head text-white">
+                  <img src="" width="50px" height="40px">
                   <h5 class="card-title">Android Application</h5>
                   <p class="card-body">
                     Embrace the new market standard as we craft creative and functional solutions for you...
@@ -251,7 +251,8 @@
           <div class="row">
             <div class="col-md-4">
               <div class="wedo-card">
-                <div class="card-body text-white">
+                <div class="card-head text-white">
+                  <img src="">
                   <h5 class="card-title">Hybrid Application</h5>
                   <p class="card-body">
                     Singsys expertly delivers streamlined, appealing, and commercially viable cross-platform mobile solutions....
@@ -262,7 +263,8 @@
             </div>
             <div class="col-md-4">
               <div class="wedo-card">
-                <div class="card-body text-white">
+                <div class="card-head text-white">
+                  <img src="data:image/png;base64,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" width="50px" height="40px">
                   <h5 class="card-title">Enterprise Application</h5>
                   <p class="card-body">
                     Unlock the potential of tailored enterprise applications to streamline operations and drive success...
@@ -288,13 +290,13 @@
     </div>
     <!--engagement model-->
     <div class="eng-model">
-      <div class="container">
+      <div class="container-sm">
         <div class="head-text text-start">
-          <h4><b>Our engagement models empower you to determine<br>
+          <h4><b>Our engagement models empower you to determine
               control and responsibility with ease</b></h4>
           <p>Unlock maximum ROI with techadisa dynamic engagement models tailored to suit your project
             needs,empowering
-            customers to choose the perfect fit <br>
+            customers to choose the perfect fit
             for success. Trust our expertise for suggested engagement models aligned with your project requirements.
           </p>
         </div>
@@ -304,7 +306,7 @@
               <div class="first eng-card">
                 <div class="card-body">
                   <div class="card-title">
-                    <i class="fa solid fa-user-plus" style="font-size: 24px;"></i>
+                    <i class="fa fa-users" style="font-size: 24px;"></i>
                     <span class="text-black"><b>Fix price Projects</b></span>
                   </div>
                   <p class="card-text">pre decide price structure that suits small and medium enterprises.</p>
@@ -316,7 +318,7 @@
               <div class=" second eng-card">
                 <div class="card-body">
                   <div class="card-title">
-                    <i class="fa fa-clock" style="font-size: 24px;"></i>
+                    <i class="fa fa-users" style="font-size: 24px;"></i>
                     <span class="text-black"><b>Time and material model.</b></span>
                   </div>
                   <p class="card-text">time & resource as basis parameter for flexible development model.</p>
